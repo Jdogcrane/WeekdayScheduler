@@ -24,9 +24,15 @@ function whatTime(hour, block) {
         block.style.backgroundColor = "grey";
     }
 }
+
+function saveBtn(key, saveBlock) {
+    localStorage.setItem(key, saveBlock.value);
+    console.log(key)
+}
+
 //for loop for each block
 for (var i = 0; i < blocks.length; i++) {
     var hourToCheck = i + 9
     whatTime(hourToCheck, blocks[i])
-    console.log(blocks[i])
+    console.log(blocks[i].key)
 }
