@@ -1,63 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Weekday Scheduler</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Work Day Scheduler</title>
-  </head>
 
-  <body>
-    <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
-    </header>
-    <div class="container">
-      <!-- Timeblocks go here -->
-    <section class="block1">Time block 1</section>
-    <input class="description">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Weekday Scheduler</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Work Day Scheduler</title>
+</head>
+
+<body>
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <p id="currentDay" class="lead"></p>
+  </header>
+  <div class="container">
+    <!-- Timeblocks go here -->
+    <!-- 9am -->
+    <section>9AM</section>
+    <input class="block1">
     <button class="saveBtn">save 1</button>
-    <section>Time block 2</section>
-    <input>
+  <!-- 10am -->
+    <section>10AM</section>
+    <input class="block2">
     <button class="saveBtn">save 2</button>
-    <section>Time block 3</section>
-    <input>
+  <!-- 11am -->
+    <section>11AM</section>
+    <input class="block3">
     <button class="saveBtn">save 3</button>
-    <section>Time block 4</section>
-    <input>
+  <!-- 12pm -->
+    <section>12PM</section>
+    <input class="block4">
     <button class="saveBtn">save 4</button>
-    <section>Time block 5</section>
-    <input>
+  <!-- 1pm -->
+    <section>1PM</section>
+    <input class="block5">
     <button class="saveBtn">save 5</button>
-    <section>Time block 6</section>
-    <input>
+  <!-- 2pm -->
+    <section>2PM</section>
+    <input class="block6">
     <button class="saveBtn">save 6</button>
-    <section>Time block 7</section>
-    <input>
+  <!-- 3pm -->
+    <section>3PM</section>
+    <input class="block7">
     <button class="saveBtn">save 7</button>
-    <section>Time block 8</section>
-    <input>
-    <button class="saveBtn">save 8</button>
-    </div>
-<footer>Time:</footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  </body>
+  <!-- 4pm -->
+    <section>4PM</section>
+    <input class="block8">
+    <button class="btn saveBtn col-md-10">save 8</button>
+  </div>
+  <h3></h3>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+
 </html>
