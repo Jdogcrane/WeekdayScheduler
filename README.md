@@ -29,4 +29,4 @@ For this project the goal was to create a Work Day Scheduler with mostly java sc
 >Notes: I struggled to compact my code at first. I feel this is about as good as I can get it now. I know getItem could be in a loop, but I have not figured out how I would do that so im going to move on.
 
 ## Site Preview
-![alt link= this is the place for the site preview](./assests/images/preview.gif)
+![alt link= this is the place for the site preview](./assets/images/preview.gif)
