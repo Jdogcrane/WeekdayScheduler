@@ -3,7 +3,6 @@ var date = moment().format('MMMM Do YYYY, h:mm:ss a');
 var hours = moment().format('H')
 // var date = new Date();
 // var hours = date.getHours();
-console.log(hours)
 document.getElementById("currentDay").textContent = date;
 
 // Each hour block in an array
@@ -31,7 +30,6 @@ function whatTime(hour, block) {
 // saves into local storage based off the key returned when the button is clicked
 function saveBtn(key, saveBlock) {
     localStorage.setItem(key, saveBlock.value);
-    console.log(key);
 };
 
 //for loop for each block based of length of the array. 
@@ -42,34 +40,25 @@ for (var i = 0; i < blocks.length; i++) {
 // each time page is loaded gets items inside local storage and displays them inside textarea
 var x1 = localStorage.getItem("input1");
 blocks[0].textContent = x1;
-
 var x2 = localStorage.getItem("input2");
 blocks[1].textContent = x2;
-
 var x3 = localStorage.getItem("input3");
 blocks[2].textContent = x3;
-
 var x4 = localStorage.getItem("input4");
 blocks[3].textContent = x4;
-
 var x5 = localStorage.getItem("input5");
 blocks[4].textContent = x5;
-
 var x6 = localStorage.getItem("input6");
 blocks[5].textContent = x6;
-
 var x7 = localStorage.getItem("input7");
 blocks[6].textContent = x7;
-
 var x8 = localStorage.getItem("input8");
 blocks[7].textContent = x8;
-
 var x9 = localStorage.getItem("input9");
 blocks[8].textContent = x9;
 // added sunrise and sunset for background color if its the start or end of the day
 if (hours == 9 || hours == 17) {
-    document.body.style.backgroundColor = "orange";
-
+    document.body.style.backgroundColor = "rgb(230, 90, 10)";
 } else {
     document.body.style.backgroundColor = "rgb(87, 204, 219)";
 }
