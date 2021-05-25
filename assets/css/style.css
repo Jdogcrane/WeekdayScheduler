@@ -4,6 +4,7 @@ body {
   line-height: 1;
   transition: 200ms;
   background-color: #ffffff;
+  padding-bottom: 40px;
 }
 
 textarea {
@@ -47,18 +48,20 @@ textarea:hover {
 .hour {
   background-color: #ffffff;
   color: #000000;
-  border-style: double;
+  border-style:groove;
   background-color: #06aed5;
   border-radius: 20px 0 0 20px;
 }
 
 
 .saveBtn {
+  border-style:groove;
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
   color: white;
+  border-color: rgb(255, 255, 255);
 }
 
 .saveBtn i {
