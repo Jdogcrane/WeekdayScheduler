@@ -1,10 +1,10 @@
 // Gets day and hours of day using moment
 var date = moment().format('MMMM Do YYYY, h:mm:ss a');
 var hours = moment().format('H')
-console.log(hours)
 // var date = new Date();
 // var hours = date.getHours();
-document.getElementById("currentDay").innerHTML = date;
+console.log(hours)
+document.getElementById("currentDay").value = date;
 
 // Each hour block in an array
 var blocks = [
@@ -17,14 +17,14 @@ var blocks = [
     block7 = document.querySelector(".block7"),
     block8 = document.querySelector(".block8")
 ];
-// Sets styling depending on past, current or future.
+// Sets styling depending on past, current or future for each block depending on the values we receive from our for loop
 function whatTime(hour, block) {
-    if (hours === hour) {
+    if (hours == hour) {
         block.style.backgroundColor = "green";
     } else if (hours < hour) {
         block.style.backgroundColor = "red";
     } else if (hours > hour) {
-        block.style.backgroundColor = "grey";
+        block.style.backgroundColor = "lightgrey";
     }
 };
 // saves into local storage based off the key returned when the button is clicked
@@ -38,3 +38,27 @@ for (var i = 0; i < blocks.length; i++) {
     var hourToCheck = i + 9;
     whatTime(hourToCheck, blocks[i]);
 };
+// each time page is loaded gets items inside local storage and displays them inside textarea
+var x1 = localStorage.getItem("input1");
+blocks[0].textContent = x1;
+
+var x2 = localStorage.getItem("input2");
+blocks[1].textContent = x2;
+
+var x3 = localStorage.getItem("input3");
+blocks[2].textContent = x3;
+
+var x4 = localStorage.getItem("input4");
+blocks[3].textContent = x4;
+
+var x5 = localStorage.getItem("input5");
+blocks[4].textContent = x5;
+
+var x6 = localStorage.getItem("input6");
+blocks[5].textContent = x6;
+
+var x7 = localStorage.getItem("input7");
+blocks[6].textContent = x7;
+
+var x8 = localStorage.getItem("input8");
+blocks[7].textContent = x8;
