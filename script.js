@@ -4,7 +4,7 @@ var hours = moment().format('H')
 // var date = new Date();
 // var hours = date.getHours();
 console.log(hours)
-document.getElementById("currentDay").value = date;
+document.getElementById("currentDay").textContent = date;
 
 // Each hour block in an array
 var blocks = [
@@ -15,16 +15,17 @@ var blocks = [
     block5 = document.querySelector(".block5"),
     block6 = document.querySelector(".block6"),
     block7 = document.querySelector(".block7"),
-    block8 = document.querySelector(".block8")
+    block8 = document.querySelector(".block8"),
+    block9 = document.querySelector(".block9")
 ];
 // Sets styling depending on past, current or future for each block depending on the values we receive from our for loop
 function whatTime(hour, block) {
     if (hours == hour) {
-        block.style.backgroundColor = "green";
+        block.style.backgroundColor = "blueviolet";
     } else if (hours < hour) {
         block.style.backgroundColor = "red";
     } else if (hours > hour) {
-        block.style.backgroundColor = "lightgrey";
+        block.style.backgroundColor = "rgb(206, 206, 206)";
     }
 };
 // saves into local storage based off the key returned when the button is clicked
@@ -62,3 +63,13 @@ blocks[6].textContent = x7;
 
 var x8 = localStorage.getItem("input8");
 blocks[7].textContent = x8;
+
+var x9 = localStorage.getItem("input9");
+blocks[8].textContent = x9;
+// added sunrise and sunset for background color if its the start or end of the day
+if (hours == 9 || hours == 17) {
+    document.body.style.backgroundColor = "orange";
+
+} else {
+    document.body.style.backgroundColor = "rgb(87, 204, 219)";
+}

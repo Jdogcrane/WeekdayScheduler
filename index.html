@@ -18,7 +18,7 @@
   <header class="jumbotron">
     <h1 class="display-3">Work Day Scheduler</h1>
     <p class="lead">A simple calendar app for scheduling your work day</p>
-    <p id="currentDay" class="lead"></p>
+    <p id="currentDay"></p>
   </header>
   <div class="container">
     <!-- Timeblocks go here -->
@@ -26,64 +26,97 @@
 
     <!-- 9am -->
     <div class="row time-block">
-      <textarea class="block1">
+      <div class="col-md-1 hour">
+        9am
+      </div>
+      <textarea class="block1 col-md-10 description">
     </textarea>
-      <button class="saveBtn" onclick="saveBtn('input1', blocks[0])">save 1</button>
+      <button class="saveBtn col-md-1" onclick="saveBtn('input1', blocks[0])"><i class="fas fa-save"></i></button>
     </div>
     <!-- 10am -->
 
     <div class="row time-block">
-    <textarea class="block2">
+      <div class="col-md-1 hour">
+        10am
+      </div>
+      <textarea class="block2 col-md-10 description">
     </textarea>
-    <button class="saveBtn" onclick="saveBtn('input2', blocks[1])">save 2</button>
-  </div>
+      <button class="saveBtn col-md-1" onclick="saveBtn('input2', blocks[1])"><i class="fas fa-save"></i></button>
+    </div>
 
     <!-- 11am -->
     <div class="row time-block">
-    <textarea class="block3">
+      <div class="col-md-1 hour">
+        11am
+      </div>
+      <textarea class="block3 col-md-10 description">
     </textarea>
-    <button class="saveBtn" onclick="saveBtn('input3', blocks[2])">save 3</button>
-  </div>
+      <button class="saveBtn col-md-1" onclick="saveBtn('input3', blocks[2])"><i class="fas fa-save"></i></button>
+    </div>
 
     <!-- 12pm -->
     <div class="row time-block">
-    <textarea class="block4">
+      <div class="col-md-1 hour">
+        12pm
+      </div>
+      <textarea class="block4 col-md-10 description">
     </textarea>
-    <button class="saveBtn" onclick="saveBtn('input4', blocks[3])">save 4</button>
-  </div>
+      <button class="saveBtn col-md-1" onclick="saveBtn('input4', blocks[3])"><i class="fas fa-save"></i></button>
+    </div>
 
     <!-- 1pm -->
     <div class="row time-block">
-    <textarea class="block5">
+      <div class="col-md-1 hour">
+        1pm
+      </div>
+      <textarea class="block5 col-md-10 description">
     </textarea>
-    <button class="saveBtn" onclick="saveBtn('input5', blocks[4])">save 5</button>
-  </div>
+      <button class="saveBtn col-md-1" onclick="saveBtn('input5', blocks[4])"><i class="fas fa-save"></i></button>
+    </div>
 
     <!-- 2pm -->
     <div class="row time-block">
-    <textarea class="block6">
+      <div class="col-md-1 hour">
+        2pm
+      </div>
+      <textarea class="block6 col-md-10 description">
     </textarea>
-    <button class="saveBtn" onclick="saveBtn('input6', blocks[5])">save 6</button>
-  </div>
+      <button class="saveBtn col-md-1" onclick="saveBtn('input6', blocks[5])"><i class="fas fa-save"></i></button>
+    </div>
 
     <!-- 3pm -->
     <div class="row time-block">
-    <textarea class="block7">
+      <div class="col-md-1 hour">
+        3pm
+      </div>
+      <textarea class="block7 col-md-10 description">
     </textarea>
-    <button class="saveBtn" onclick="saveBtn('input7', blocks[6])">save 7</button>
-  </div>
+      <button class="saveBtn col-md-1" onclick="saveBtn('input7', blocks[6])"><i class="fas fa-save"></i></button>
+    </div>
 
     <!-- 4pm -->
     <div class="row time-block">
-    <textarea class="block8">
+      <div class="col-md-1 hour">
+        4pm
+      </div>
+      <textarea class="block8 col-md-10 description">
     </textarea>
-    <button class="saveBtn" onclick="saveBtn('input8', blocks[7])">save 8</button>
-  </div>
-  
-  <h3></h3>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  <script src="./script.js"></script>
+      <button class="saveBtn col-md-1" onclick="saveBtn('input8', blocks[7])"><i class="fas fa-save"></i></button>
+    </div>
+
+    <div class="row time-block">
+      <div class="col-md-1 hour">
+        5pm
+      </div>
+      <textarea class="block9 col-md-10 description">
+    </textarea>
+      <button class="saveBtn col-md-1" onclick="saveBtn('input9', blocks[8])"><i class="fas fa-save"></i></button>
+    </div>
+
+    <h3></h3>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
