@@ -1,4 +1,4 @@
-<h1 style="text-align: center;">Quiz Game</h1>
+<h1 style="text-align: center;">WeekdayScheduler</h1>
 
 [[Deployed-Site]](https://jdogcrane.github.io/WeekdayScheduler/)
 
